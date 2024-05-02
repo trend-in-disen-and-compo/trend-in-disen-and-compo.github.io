@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Disentanglement and Compositionality in Computer Vision</title>
+
+    <style>
+        body {
+            width: 95%;
+            margin: 0 auto;
+            background-color: #f2f2f2;
+            font-size: 18px; /* default 16px */
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        td {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+            padding-right: 0px;
+        }
+
+        .row {
+            content: "";
+            clear: both;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 5px;
+        }
+
+        .column {
+            float: left;
+            width: 15%;
+            padding: 5px;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 20px;
+        }
+
+        .text-content {
+            text-align: left;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .row {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .column {
+                float: left;
+                width: 100%;
+                padding: 0px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="CVPR 2024 Tutorial on Disentanglement and Compositionality in Computer Vision">
+    <meta name="keywords" content="CVPR, Disentanglement and Compositionality, Computer Vision">
+    <meta name="author" content="Xin Jin et al.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>CVPR 2024 Tutorial on <i>Disentanglement and Compositionality in Computer Vision</i></h2>
+    <h2>17 June 2024, 9AM-12PM</h2>
+    <h3>Seattle Convention Center, Seattle WA, USA</h3>
+    <img src="images/cvpr24_banner.jpeg" width="50%" alt="CVPR2024">
+</div>
+
+<div class="container">
+    <h2>Tutorial lecturers</h2>
+
+    <div class="row">
+        <div class="column">
+            <a href="https://scholar.google.com/citations?user=byaSC-kAAAAJ&hl=zh-CN">
+                <img src="people/jx3.jpg" alt="Xin Jin" width="220" height="230">
+                <div>Xin Jin<br>Eastern Institute of Technology, Ningbo, China</div>
+            </a>
+        </div>
+        <div class="column">
+            <a href="https://scholar.google.fi/citations?user=qT5psCEAAAAJ&hl=fi">
+                <img src="people/yt.jpg" alt="Tao Yang" width="220" height="230">
+                <div>Tao Yang<br>Microsoft Research Asia (MSRA), Beijing, China</div>
+            </a>
+        </div>
+        <div class="column">
+            <a href="https://kingjamessong.github.io//">
+                <img src="people/sy.png" alt="Yue Song" width="220" height="230">
+                <div>Yue Song<br>University of Trento, Italy, and University of Amsterdam, the Netherlands</div>
+            </a>
+        </div>
+        <div class="column">
+            <a href="https://adamdad.github.io/">
+                <img src="people/xy2.jpg" alt="Xingyi Yang" width="220" height="230">
+                <div>Xingyi Yang<br>National University of Singapore, Singapore
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <a href="https://scholar.google.com/citations?user=_cUfvYQAAAAJ&hl=zh-CN">
+                <img src="people/wenjun.jpg" alt="Wenjun (Kevin) Zeng" width="220" height="230">
+                <div>Wenjun (Kevin) Zeng<br>Eastern Institute of Technology, Ningbo, China</div>
+            </a>
+        </div>
+        <div class="column">
+            <a href="https://disi.unitn.it/~sebe/">
+                <img src="people/nicu.png" alt="Nicu Sebe" width="220" height="230">
+                <div>Nicu Sebe<br>University of Trento, Italy</div>
+            </a>
+        </div>
+        <div class="column">
+            <a href="https://sites.google.com/site/sitexinchaowang/">
+                <img src="people/xc.jpeg" alt="Xinchao Wang" width="220" height="230">
+                <div>Xinchao Wang<br>National University of Singapore, Singapore
+                </div>
+            </a>
+        </div>
+        <div class="column">
+            <a href="https://yanshuicheng.info/">
+                <img src="people/shuicheng.png" alt="Shuicheng Yan" width="220" height="230">
+                <div>Shuicheng Yan<br>Managing Director of Kunlun 2050 Research
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Overview</h2>
+    <div class="text-content">
+         <p>This tutorial aims to explore the concepts of disentanglement and compositionality in the field of computer vision. These concepts play a crucial role in enabling machines to understand and interpret visual information with more sophistication and human-like reasoning. Participants will learn about advanced techniques and models that allow for the disentanglement of visual factors in images and the compositionality of these factors to produce more meaningful representations. All in all, Disentanglement and Composition are believed to be one of the possible ways for AI to fundamentally understand the world, and eventually achieve Artificial General Intelligence (AGI).</p>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Schedule</h2>
+    <table>
+        <tr>
+            <td>09:00 am - 09:10 am</td>
+            <td>Opening remarks, by <a href="https://www.eitech.edu.cn/?tid=40&p=teacher">Xin Jin</a></td>
+        </tr>
+
+        <tr>
+            <td>09:10 am - 09:50 am</td>
+            <td>Disentanglement and Compositionality in Computer Vision, by <a href="https://www.eitech.edu.cn/?tid=40&p=teacher">Xin Jin</a> & <a href="https://scholar.google.fi/citations?user=qT5psCEAAAAJ&hl=fi">Tao Yang</a> & <a href="https://scholar.google.com/citations?user=_cUfvYQAAAAJ&hl=zh-CN">Wenjun (Kevin) Zeng</a> [<a href="xxx">slides-a</a> & <a href="xxx">video-a</a>, <a href="xxx">slides-b</a> & <a href="xxx">video-b</a>]</td>
+        </tr>
+
+        <tr>
+            <td>09:50 am - 10:30 am</td>
+            <td>Equivariant and Disentangled Representation Learning, by <a href="https://kingjamessong.github.io/">Yue Song</a> & <a href="http://disi.unitn.it/~sebe/"> Nicu Sebe </a> [<a href="xxx">slides</a>]</td>
+        </tr>
+
+        <tr>
+            <td>10:30 am - 10:40 am</td>
+            <td>Coffee break</td>
+        </tr>
+
+        <tr>
+            <td>10:40 am - 11:20 am</td>
+            <td>Disentanglement and Composition for AGI, by <a href="https://adamdad.github.io/">Xingyi Yang</a> & <a href="https://sites.google.com/site/sitexinchaowang/">Xinchao Wang</a>  & <a href="https://yanshuicheng.info/"> Shuicheng Yan </a> [<a href="xxx">slides</a>]</td>
+        </tr>
+
+        <tr>
+            <td>11:20 am - 12:00 pm</td>
+            <td>TBD, by <a href="xxx">TBD</a> [<a href="xxx">slides-a</a>]</td>
+        </tr>
+    </table>
+</div>
+
+<div class="container">
+    <h2>Contact</h2>
+    <div class="text-content">
+        <p>Please contact <a href="https://www.eitech.edu.cn/?tid=40&p=teacher">Xin Jin</a> for general inquiries.</p>
+    </div>
+</div>
+
+</div> -->
+
+<br>
+
+</body>
+</html>
